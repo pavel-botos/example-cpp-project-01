@@ -19,12 +19,12 @@ namespace Botos_Example {
 
     class SkodaFabia : public Vehicle {
     public:
-        string drive();
+        string drive() override;
     };
 
     class Trabant : public Vehicle {
     public:
-        string drive();
+        string drive() override;
     };
 
     /**
@@ -40,7 +40,7 @@ namespace Botos_Example {
      */
     class SkodaCarFactoryImplementation : public AbstractFactoryPatternExample {
     public:
-        Vehicle *create();
+        Vehicle *create() override;
     };
 
     /**
@@ -48,7 +48,7 @@ namespace Botos_Example {
      */
     class SachsenringCarFactoryImplementation : public AbstractFactoryPatternExample {
     public:
-        Vehicle *create();
+        Vehicle *create() override;
     };
 
 }
