@@ -14,3 +14,4 @@ enable_testing()
 
 # declares a test with our executable
 add_test(NAME test1 COMMAND UnitTest)
+add_test(NAME builderTest COMMAND BuilderUnitTest)
