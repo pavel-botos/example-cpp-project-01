@@ -4,26 +4,34 @@
 
 #include "AbstractFactoryPatternExample.h"
 
-
 namespace Botos_Example {
 
-    string SkodaFabia::drive() {
-        return "You are driving SKODA FABIA.";
-    }
+SkodaFabia::SkodaFabia() {
+}
+SkodaFabia::~SkodaFabia() {
+}
+
+string SkodaFabia::drive() {
+	return "You are driving SKODA FABIA.";
+}
+
+Trabant::Trabant(){
+}
 
 
-    string Trabant::drive() {
-        return "You are driving TRABANT.";
-    }
+Trabant::~Trabant(){
+}
 
+string Trabant::drive() {
+	return "You are driving TRABANT.";
+}
 
-    Vehicle *SkodaCarFactoryImplementation::create() {
-        return new SkodaFabia;
-    }
+Vehicle *SkodaCarFactoryImplementation::create() {
+	return new SkodaFabia;
+}
 
-
-    Vehicle *SachsenringCarFactoryImplementation::create() {
-        return new Trabant;
-    }
+Vehicle *SachsenringCarFactoryImplementation::create() {
+	return new Trabant;
+}
 
 }

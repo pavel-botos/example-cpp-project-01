@@ -1,4 +1,4 @@
-set(Boost_ADDITIONAL_VERSIONS "1.65" "1.65.0")
+set(Boost_ADDITIONAL_VERSIONS "1.58" "1.58.0")
 
 include_directories(${TEST_SOURCE_DIR}/src
         ${Boost_INCLUDE_DIRS}
@@ -14,7 +14,7 @@ target_link_libraries(UnitTest
         ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY}
         )
 
-set_property(TARGET UnitTest PROPERTY CXX_STANDARD 17)
+set_property(TARGET UnitTest PROPERTY CXX_STANDARD 11)
 
 target_link_libraries(BuilderUnitTest
         AbstractFactoryPatternExample
@@ -23,4 +23,4 @@ target_link_libraries(BuilderUnitTest
         ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY}
         )
 
-set_property(TARGET BuilderUnitTest PROPERTY CXX_STANDARD 17)
+set_property(TARGET BuilderUnitTest PROPERTY CXX_STANDARD 11)

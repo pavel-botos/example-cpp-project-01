@@ -1,4 +1,11 @@
 build/
 cmake-build-debug/
 .idea/
+
+**/[Cc][Mm]ake[Ff]iles/
+**/*.cmake
+
 .project
+.cproject
+**/[Mm]akefile
+**/[Cc][Mm]ake[Cc]ache.txt

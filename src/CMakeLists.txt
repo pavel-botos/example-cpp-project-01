@@ -3,5 +3,5 @@ add_library(BuilderPatternExample BuilderPatternExample.cpp BuilderPatternExampl
 add_executable(ExampleCPPProject01 main.cpp)
 target_link_libraries(ExampleCPPProject01 AbstractFactoryPatternExample BuilderPatternExample)
 
-set_property(TARGET AbstractFactoryPatternExample PROPERTY CXX_STANDARD 17)
-set_property(TARGET ExampleCPPProject01 PROPERTY CXX_STANDARD 17)
+set_property(TARGET AbstractFactoryPatternExample PROPERTY CXX_STANDARD 11)
+set_property(TARGET ExampleCPPProject01 PROPERTY CXX_STANDARD 11)

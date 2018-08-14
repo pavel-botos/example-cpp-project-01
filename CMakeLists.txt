@@ -1,11 +1,11 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.5)
 project(ExampleCPPProject01)
 
 
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 11)
 
-find_package(Boost 1.65 REQUIRED COMPONENTS unit_test_framework)
+find_package(Boost 1.58 REQUIRED COMPONENTS unit_test_framework)
 
 add_subdirectory(src)
 add_subdirectory(test)
