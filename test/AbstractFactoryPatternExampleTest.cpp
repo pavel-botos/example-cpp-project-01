@@ -6,7 +6,7 @@
 
 #include <iostream>
 #include <boost/test/unit_test.hpp>
-#include "../src/AbstractFactoryPatternExample.cpp"
+#include "../src/AbstractFactoryPatternExample.h"
 
 using namespace std;
 using namespace Botos_Example;

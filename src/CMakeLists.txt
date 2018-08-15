@@ -1,7 +1,12 @@
 add_library(AbstractFactoryPatternExample AbstractFactoryPatternExample.cpp AbstractFactoryPatternExample.h)
 add_library(BuilderPatternExample BuilderPatternExample.cpp BuilderPatternExample.h)
+add_library(MoonLanderAutopilot1D MoonLanderAutopilot1D.cpp MoonLanderAutopilot1D.h)
+
+
 add_executable(ExampleCPPProject01 main.cpp)
-target_link_libraries(ExampleCPPProject01 AbstractFactoryPatternExample BuilderPatternExample)
+target_link_libraries(ExampleCPPProject01 AbstractFactoryPatternExample BuilderPatternExample MoonLanderAutopilot1D)
 
 set_property(TARGET AbstractFactoryPatternExample PROPERTY CXX_STANDARD 11)
+set_property(TARGET BuilderPatternExample PROPERTY CXX_STANDARD 11)
+set_property(TARGET MoonLanderAutopilot1D PROPERTY CXX_STANDARD 11)
 set_property(TARGET ExampleCPPProject01 PROPERTY CXX_STANDARD 11)

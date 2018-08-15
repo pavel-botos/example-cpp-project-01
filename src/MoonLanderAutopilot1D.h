@@ -1,0 +1,15 @@
+//
+// Created by pavel on 15.8.18.
+//
+
+#ifndef EXAMPLECPPPROJECT01_MOONLANDERAUTOPILOT1D_H
+#define EXAMPLECPPPROJECT01_MOONLANDERAUTOPILOT1D_H
+
+namespace Botos_Example {
+    class MoonLanderAutopilot1D {
+
+    };
+
+}
+
+#endif //EXAMPLECPPPROJECT01_MOONLANDERAUTOPILOT1D_H

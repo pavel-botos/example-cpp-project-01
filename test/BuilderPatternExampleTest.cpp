@@ -5,7 +5,7 @@
 
 #include <iostream>
 #include <boost/test/unit_test.hpp>
-#include "../src/BuilderPatternExample.cpp"
+#include "../src/BuilderPatternExample.h"
 
 using namespace std;
 using namespace Botos_Example;
