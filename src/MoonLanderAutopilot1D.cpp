@@ -3,3 +3,5 @@
 //
 
 #include "MoonLanderAutopilot1D.h"
+
+using namespace Botos_Example;

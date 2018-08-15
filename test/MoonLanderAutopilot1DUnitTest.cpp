@@ -31,3 +31,49 @@ BOOST_AUTO_TEST_CASE(moonlander_autopilot_1d_test_instantiation) {
 
 
 }
+
+BOOST_AUTO_TEST_CASE(moonlander_autopilot_1d_test_acceleration_service_1) {
+    /**
+     * Given
+     */
+     // force in Newtons
+    float force = 10;
+
+    // weight in kgs
+    float weight = 10;
+
+    /**
+     * When
+     */
+    float acceleration = AccelerationService::acceleration(force, weight);
+
+    /**
+     * Then
+     */
+    BOOST_CHECK_EQUAL(1.0f, acceleration);
+
+
+}
+
+BOOST_AUTO_TEST_CASE(moonlander_autopilot_1d_test_acceleration_service_2) {
+    /**
+     * Given
+     */
+    // force in Newtons
+    float force = 44316.0f;
+
+    // weight in kgs
+    float weight = 14000.0f;
+
+    /**
+     * When
+     */
+    float acceleration = AccelerationService::acceleration(force, weight);
+
+    /**
+     * Then
+     */
+    BOOST_CHECK_EQUAL(3.16542864f, acceleration);
+
+
+}
