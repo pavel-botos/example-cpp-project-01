@@ -34,7 +34,9 @@ namespace Botos_Example {
          * @return consumed fuel in kgs
          */
         virtual float ignite(float time);
+        virtual ~DescentEngine();
     };
+
 
     class LunarModule {
     private:
