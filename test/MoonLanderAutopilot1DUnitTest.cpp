@@ -5,7 +5,8 @@
 
 #include <iostream>
 #include <boost/test/unit_test.hpp>
-#include "../src/MoonLanderAutopilot1D.h"
+#include "../src/moonlander/MoonLanderAutopilot1D.h"
+#include "../src/moonlander/MoonGravityService.h"
 
 using namespace std;
 using namespace Botos_Example;

@@ -93,6 +93,7 @@ namespace Botos_Example {
         float actualSpeed = 0.0f;
         PropellantTank *propellantTank;
         DescentEngine *descentEngine;
+        MoonLanderAutopilot1D *moonLanderAutopilot1D;
 
     public:
         LunarModule(DescentEngine *descentEngine, PropellantTank *propellantTank, float initialHeight){
@@ -101,8 +102,16 @@ namespace Botos_Example {
             this->actualHeight = initialHeight;
         }
 
+        void setMoonLanderAutopilot(MoonLanderAutopilot1D *moonLanderAutopilot1D){
+            this->moonLanderAutopilot1D = moonLanderAutopilot1D;
+        }
+
         ~LunarModule();
 
+
+    };
+
+    class MoonGravityService {
 
     };
 
