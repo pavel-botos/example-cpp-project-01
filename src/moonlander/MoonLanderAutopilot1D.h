@@ -111,11 +111,7 @@ namespace Botos_Example {
 
     };
 
-    class MoonGravityService {
-
-    };
-
-
+   
 
 }
 

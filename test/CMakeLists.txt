@@ -41,3 +41,14 @@ target_link_libraries(MoonLanderAutopilot1DUnitTest
         )
 
 set_property(TARGET MoonLanderAutopilot1DUnitTest PROPERTY CXX_STANDARD 11)
+
+add_executable(MoonGravityServiceUnitTest MoonGravityServiceUnitTest.cpp)
+
+target_link_libraries(MoonGravityServiceUnitTest
+        GravityService
+        ${Boost_FILESYSTEM_LIBRARY}
+        ${Boost_SYSTEM_LIBRARY}
+        ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY}
+        )
+
+set_property(TARGET MoonGravityServiceUnitTest PROPERTY CXX_STANDARD 11)

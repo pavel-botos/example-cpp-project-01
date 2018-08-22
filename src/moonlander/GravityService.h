@@ -24,14 +24,14 @@ namespace Botos_Example {
     class GravityService {
     public:                
         virtual float getAcceleration(float height) = 0;
-        virtual ~GravityService() = 0;
+        virtual ~GravityService(){};
     };
     
-    class EarthGravityService: public GravityService{
+    class MoonGravityService: public GravityService{
     public:
-        EarthGravityService();
+        MoonGravityService();
         float getAcceleration(float height) override;
-        ~EarthGravityService();
+        ~MoonGravityService();
     };
 
 }

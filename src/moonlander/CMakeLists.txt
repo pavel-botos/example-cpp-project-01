@@ -1,4 +1,4 @@
-add_library(GravityService EarthGravityService.cpp MoonGravityService.cpp GravityService.h)
+add_library(GravityService MoonGravityService.cpp GravityService.h)
 add_library(MoonLanderAutopilot1D MoonLanderAutopilot1D.cpp MoonLanderAutopilot1D.h)
 
 
