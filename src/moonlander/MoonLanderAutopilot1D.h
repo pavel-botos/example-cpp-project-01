@@ -24,7 +24,7 @@ namespace Botos_Example {
             this->propellantWeight = propellantWeight;
         };
 
-        virtual float getPropellantWeight() {
+        float getPropellantWeight() {
             return propellantWeight;
         };
 
@@ -33,6 +33,12 @@ namespace Botos_Example {
         ~PropellantTank() {
 
         };
+        
+        PropellantTank *clone(){
+            PropellantTank *clonedInstance = new PropellantTank();
+            clonedInstance->setPropellantWeight(this->propellantWeight);
+            return clonedInstance;
+        }
 
     };
 
@@ -48,6 +54,10 @@ namespace Botos_Example {
 
         bool running;
 
+    protected:
+        void setRunning(bool running){
+            this->running = running;
+        }
 
     public:
         DescentEngine(PropellantTank *propellantTank, float thrust, float consumption) {
@@ -67,7 +77,7 @@ namespace Botos_Example {
 
         ~DescentEngine() {
             stop();
-            delete this->propellantTank;
+            this->propellantTank = nullptr;
         };
 
         float getThrust(float timeDelta){
@@ -76,6 +86,12 @@ namespace Botos_Example {
                 return thrust;
             }
             return 0.0f;
+        }
+        
+        DescentEngine *clone(PropellantTank *propellantTank){
+            DescentEngine *clonedInstance = new DescentEngine(propellantTank, thrust, consumption);
+            clonedInstance->setRunning(this->running);
+            return clonedInstance;
         }
     };
 
