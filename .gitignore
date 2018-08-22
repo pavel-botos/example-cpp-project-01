@@ -9,3 +9,7 @@ cmake-build-debug/
 .cproject
 **/[Mm]akefile
 **/[Cc][Mm]ake[Cc]ache.txt
+
+.kdev4/
+.settings/
+example-cpp-project-01.kdev4
