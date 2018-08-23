@@ -60,6 +60,10 @@ namespace Botos_Example {
         }
 
     public:
+        DescentEngine(){
+
+        }
+
         DescentEngine(PropellantTank *propellantTank, float thrust, float consumption) {
             this->propellantTank = propellantTank;
             this->thrust = thrust;

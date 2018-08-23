@@ -52,3 +52,5 @@ target_link_libraries(MoonGravityServiceUnitTest
         )
 
 set_property(TARGET MoonGravityServiceUnitTest PROPERTY CXX_STANDARD 11)
+
+add_subdirectory(moonlander)
