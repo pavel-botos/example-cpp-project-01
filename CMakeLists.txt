@@ -19,3 +19,4 @@ add_test(NAME moonLanderAutopilot1DUnitTest COMMAND MoonLanderAutopilot1DUnitTes
 add_test(NAME moonGravityServiceUnitTest COMMAND MoonGravityServiceUnitTest)
 
 add_test(NAME PropellantTankUnitTest COMMAND PropellantTankUnitTest)
+add_test(NAME DescendEngineUnitTest COMMAND DescendEngineUnitTest)

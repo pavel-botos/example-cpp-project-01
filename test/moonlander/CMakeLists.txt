@@ -15,5 +15,19 @@ target_link_libraries(
         ${Boost_FILESYSTEM_LIBRARY}
         ${Boost_SYSTEM_LIBRARY}
         ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY}
-        )
+)
+
+set_property(TARGET PropellantTankUnitTest PROPERTY CXX_STANDARD 11)
+
+add_executable(DescendEngineUnitTest DescendEngineUnitTest.cpp)
+
+target_link_libraries(
+        DescendEngineUnitTest
+        MoonLanderAutopilot1D
+        ${Boost_FILESYSTEM_LIBRARY}
+        ${Boost_SYSTEM_LIBRARY}
+        ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY}
+)
+
+set_property(TARGET DescendEngineUnitTest PROPERTY CXX_STANDARD 11)
 

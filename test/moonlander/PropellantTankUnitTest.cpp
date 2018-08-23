@@ -57,6 +57,8 @@ BOOST_AUTO_TEST_CASE(propellant_tank_test_clone) {
 
     BOOST_CHECK(propellantTankClone);
 
+    BOOST_CHECK(propellantTankOriginal != propellantTankClone);
+
     BOOST_CHECK_EQUAL(propellantTankClone->getPropellantWeight(), 5000.0f);
 
     /**
